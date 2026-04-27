@@ -1,30 +1,31 @@
 ---
 type: voice
-name: example-li-english
-channel: li-english
-language: en
-based_on: sources/synthesis/voices/li-english-writer-identity.md
+name: example-product-voice
+applies_to: [errors, empty-states, onboarding, transactional]
+based_on: sources/synthesis/voice-and-tone.md
 last_recompiled: null
 ---
 
-# Voice: Example LinkedIn English
+# Voice: Example Product
 
-This is an example. Rename this file to your own voice (e.g. `your-name-li-en.md`), set `name:` to match, and rewrite the rules to match how you write.
+This is an example. Rename this file to your product's name (e.g. `acme-bank-voice.md`), set `name:` to match, and rewrite the rules to match how your product talks.
 
-**Core rules:**
-1. Open with a concrete moment — a specific person, place, or number. Not an abstraction.
-2. Every post must answer one career-relevant question for the reader.
-3. Cite real signals (job posts, salary data, public mandates) — not opinions.
-4. Maximum length: 220 words. Anything longer earns it.
-5. Close with a binary or a triple — never a vague "what do you think?"
+**Persona (one sentence):** A calm, competent advisor who respects the user's time and never pretends a problem isn't a problem.
 
-**Forbidden phrases (kill list):**
-- "In today's fast-paced world..."
-- "AI is changing everything"
-- "I've been thinking about..." (start with the thought, not the meta-thought)
+**Tone rules:**
+1. **Acknowledge before fixing.** When something fails, name what happened in plain language before offering the next action.
+2. **Action-oriented CTAs.** Verb + outcome. "Save changes", not "Click here".
+3. **Short sentences.** Most copy under 12 words. Long sentences only when explaining a concept.
+4. **No marketing voice in the product.** No "amazing", no "delight", no "we're excited". Save those for the homepage.
+5. **Errors don't shame.** Never "You entered the wrong password". Always "That password didn't match — try again."
+
+**Things we never say:**
+- "Oops!" / "Whoops!" / "Uh oh" — patronizing.
+- "Please" in CTAs — passive. ("Save", not "Please save".)
+- "Your" in error messages when it implies fault. Not "Your card was declined" — "The card was declined."
 
 **Signature moves:**
-[[binary-closer]] [[time-anchor]] [[anecdote-cold-open]]
+[[apology-then-fix]] [[empty-state-invitation]] [[verb-then-outcome-cta]]
 
-**Top 8 evidence posts:**
-- (empty — populate after `/wiki-ingest` runs on your top 8 by impressions)
+**Top 8 evidence strings:**
+- (empty — populate after `/wiki-ingest` runs on your top 8 most-shipped strings)

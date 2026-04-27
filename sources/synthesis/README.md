@@ -1,9 +1,12 @@
 # sources/synthesis/
 
-Pre-existing writer-identity files, channel rules, voice guides — anything you already wrote about how you write. The wiki uses these as the seed for `/wiki-compile` to build voice pages in `wiki/voices/`.
+Pre-existing voice & tone documents, brand guidelines, content strategy docs — anything written *about* how your product talks.
 
-Examples:
-- `voices/li-english-writer-identity.md` — your existing LinkedIn voice guide
-- `voices/fb-hebrew-writer-identity.md` — your existing Facebook voice guide
+The wiki uses these as the seed for `/wiki-compile` to build voice pages in `wiki/voices/`.
 
-If you don't have these yet, skip this folder. The wiki will compile voice pages from your shipped posts directly.
+**Examples:**
+- `voice-and-tone.md` — your existing voice & tone doc
+- `brand-guidelines.md` — broader brand language guidance
+- `editorial-style-guide.md` — house style on grammar, capitalization, punctuation
+
+If you don't have any of these yet, skip this folder. The wiki can compile a voice page from your shipped strings directly.

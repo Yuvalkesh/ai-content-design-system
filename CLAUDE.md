@@ -50,20 +50,20 @@ Five operating procedures live in `workflows/`:
 
 ## Phase 1 scope (recommended first steps)
 
-When you start populating this repo, keep scope tight:
+This repo is for **content designers / UX writers** building a content brain for one product. Keep scope tight:
 
-- Pick **one channel** (LinkedIn English, Facebook Hebrew, your blog — pick one).
-- Add **one voice** in `wiki/voices/` describing how you write on that channel.
-- Drop your top **5 shipped posts** into `sources/<channel>/posts/`.
+- Pick **one product surface** to start with: errors, empty states, onboarding, or transactional copy. Just one.
+- Add **one voice** in `wiki/voices/` describing how your product speaks on that surface.
+- Drop **5 real strings** from production into `sources/<surface>/` — one file per string, with 1-2 lines of context above each.
 - Run `/wiki-ingest` to populate `wiki/assets/`, `patterns/`, `hooks/`, `themes/`.
-- Run `/wiki-query` to ask the system what makes your best posts work.
-- Run `/wiki-compile brief` to generate your next post with evidence.
+- Run `/wiki-query` to ask the system what tone you use, what patterns recur.
+- Run `/wiki-compile draft "<description of next screen>"` to generate a voice-correct draft with citations.
 
-Expand to a second channel only after Phase 1 is producing useful briefs.
+Expand to a second surface only after Phase 1 is producing usable drafts.
 
 ## Out of scope (Phase 2+)
 
-Multi-brand wikis (one repo per brand), email sequences, daily planners, anything off-channel. If you want those, run a second instance of this template — don't mix scopes in one repo.
+Marketing copy, blog posts, email sequences. This repo is for **product copy** (microcopy, errors, empty states, onboarding, transactional). If you want a marketing-content wiki, run a second instance of this template — don't mix scopes in one repo.
 
 ## Conventions
 

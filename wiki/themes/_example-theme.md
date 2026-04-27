@@ -1,19 +1,21 @@
 ---
 type: theme
-name: example-theme-builders-win
+name: first-time-user
 status: active
-applies_to: [li-english, fb-hebrew]
+applies_to: [onboarding, empty-states]
 evidence_count: 0
 top_examples: []
 last_lint: null
 ---
 
-# Example theme: Builders win
+# Theme: First-time user
 
-This is an example theme. A theme is a recurring topic cluster — what you write *about*, not how. Replace this with one of yours.
+This is an example theme. Themes are recurring **user moments** — what the user is feeling or doing when they hit a screen. Replace this with one of yours.
 
-**Definition:** Posts about the divide between people who build with AI and people who only consume it. The bet: builders compound, consumers stagnate.
+**Definition:** Strings shown to a user who has never used this feature. They have no prior context. They're either curious, skeptical, or in a hurry.
 
-**Why this theme:** Aligned with the audience's career anxiety. Easy to anchor in real signals (job postings, mandates, layoffs).
+**Why this theme matters:** First-time copy is high-stakes — it sets the relationship with the feature. A confused first-time user often never comes back. A clear first-time user converts.
 
-**Backlinks:** [[example-li-english]]
+**Common adjacent themes:** [[returning-user-skipped-this-before]] [[trial-user-first-action]]
+
+**Backlinks:** [[example-product-voice]] [[empty-state-invitation]]

@@ -1,14 +1,14 @@
 # AI Content Design System
 
-A markdown-based content brain for one writer or one brand. Built on the [Karpathy LLM Wiki pattern](https://karpathy.bearblog.dev/llm-wiki/) — knowledge as compounding markdown files, not RAG over PDFs.
+A markdown-based content brain for the product you write for. Built on the [Karpathy LLM Wiki pattern](https://karpathy.bearblog.dev/llm-wiki/) — knowledge as compounding markdown files, not RAG over PDFs.
 
-The bet: every post you ship makes the next post smarter, because every post becomes one entity page in `wiki/` with backlinks to its patterns, hooks, themes, and voice.
+The bet: every error message, empty state, or onboarding line you ship makes the next one easier to draft, because every shipped string becomes one entity in `wiki/` with backlinks to its patterns, hooks, themes, and product voice.
 
 ---
 
 ## Quick start
 
-1. Click **Use this template** at the top of this GitHub repo. Pick a name and visibility for your copy.
+1. Click **Use this template** at the top of this GitHub repo. Pick a name (e.g. `acme-copy-brain`) and visibility for your copy.
 2. Clone your new repo and `cd` into it:
    ```bash
    gh repo clone YOUR-USERNAME/your-repo-name
@@ -22,10 +22,10 @@ The bet: every post you ship makes the next post smarter, because every post bec
    ```
    /wiki-query "what does this template contain?"
    /wiki-ingest
-   /wiki-compile brief
+   /wiki-compile draft "checkout failed — payment declined"
    ```
 
-That's it. The five `/wiki-*` slash commands are bundled with this repo (in `.claude/skills/`) — they work the moment you open the repo in Claude Code.
+The five `/wiki-*` slash commands are bundled with this repo (in `.claude/skills/`) — they work the moment you open the repo in Claude Code.
 
 ---
 
@@ -34,8 +34,8 @@ That's it. The five `/wiki-*` slash commands are bundled with this repo (in `.cl
 ```
 templates/        Frontmatter contracts (asset, voice, pattern, lesson, agent, decision)
 workflows/        Operating procedures (ingest, query, lint, consult-board, compile)
-wiki/             Your knowledge base — populated as you ingest content
-sources/          Drop your raw shipped posts here. Immutable archive.
+wiki/             Your product's content brain — populated as you ingest strings
+sources/          Drop your shipped strings here. Immutable archive.
 CLAUDE.md         Schema rules for the AI maintaining this repo. Read first.
 principles.md     Voice philosophy.
 index.md          Auto-regenerated catalog of everything in wiki/.
@@ -46,11 +46,23 @@ log.md            Append-only history of changes.
 
 ## How it works
 
-1. You drop your top 5 shipped posts into `sources/<channel>/posts/`.
-2. `/wiki-ingest` reads each one, creates an entity page in `wiki/assets/`, and updates the `patterns/`, `hooks/`, `themes/` your post used.
-3. `/wiki-query` answers questions against the wiki — "what makes my best posts work?", "show me my voice rules" — by following backlinks.
-4. `/wiki-compile brief <topic>` generates an evidence-backed brief for your next post.
-5. After you ship the new post, drop it in `sources/`, run `/wiki-ingest` again. The cycle compounds.
+1. You drop 5 real strings from your product into `sources/<surface>/` — an error, an empty state, an onboarding line, a confirmation, a CTA. One file per string.
+2. `/wiki-ingest` reads each one, creates an entity page in `wiki/assets/`, and updates the `patterns/`, `hooks/`, `themes/` it used.
+3. `/wiki-query` answers questions against the wiki — "what tone do we use in error messages?", "show me our voice rules" — with citations to actual shipped strings.
+4. `/wiki-compile draft <description>` generates a voice-correct draft for the next screen, with options each backed by past strings that shipped.
+5. After the new string ships, drop it in `sources/`, run `/wiki-ingest` again. The cycle compounds.
+
+---
+
+## What this is for
+
+You're a content designer or UX writer working on a product. You want:
+- Your AI to actually know how your product talks.
+- The voice & tone doc nobody reads to be replaced by a system that reads itself.
+- A way to onboard new copywriters in 30 minutes by handing them a repo URL.
+- Every shipped string to make the next one faster to draft.
+
+This is for that.
 
 ---
 
@@ -58,7 +70,7 @@ log.md            Append-only history of changes.
 
 - **No vector DB.** Just markdown files in git.
 - **No embedding cost.** No re-indexing.
-- **Human-readable.** Open the folder in Obsidian — same wiki, with graph view.
+- **Human-readable.** Open the folder in Obsidian — same wiki, with graph view of how your strings connect.
 - **Versioned.** Every change is a commit. Roll back, branch, diff.
 - **Portable.** Fork the repo, clone it, anyone with Claude Code can use it.
 
@@ -66,4 +78,4 @@ log.md            Append-only history of changes.
 
 ## Next steps
 
-Read `CLAUDE.md` to understand the schema. Read `workflows/` to see how each command operates. Then start with one channel, five posts, and one `/wiki-ingest`.
+Read `CLAUDE.md` to understand the schema. Read `workflows/` to see how each command operates. Then start with one product surface (errors, or empty states), five real strings, and one `/wiki-ingest`.

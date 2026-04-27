@@ -1,16 +1,16 @@
 ---
 type: lesson
 name: use-real-numbers
-applies_to: [li-english, fb-hebrew, blog]
+applies_to: [errors, empty-states, onboarding, transactional]
 severity: hard
 source_event: null
 last_violated: null
 ---
 
-# Use real numbers, not "lots of"
+# Use real numbers, not "a few" or "soon"
 
-**Rule:** Replace any vague quantifier ("many", "lots of", "tons of") with a real number. If you don't have one, find one or cut the line.
+**Rule:** Replace vague quantifiers ("a few", "some", "soon", "in a moment") with concrete numbers and timeframes. If you don't have one, write around the line entirely.
 
-**Why:** Specificity is credibility. "23 companies" beats "many companies." Made-up specificity is worse than vagueness — only use numbers you can defend.
+**Why:** Specificity is credibility in product copy. "Arrives in 2-3 minutes" beats "arrives soon". "Up to 5 attachments" beats "a few attachments". Vague numbers turn into support tickets when reality differs from the user's assumption.
 
-**How to apply:** Before shipping, scan the draft for words like "many", "several", "tons" — replace each one with a real number or rewrite the sentence.
+**How to apply:** Before shipping, scan for "soon", "a moment", "shortly", "a few", "some". Replace each with a real number you've confirmed with the PM or engineer. If no number is available, restructure the sentence.

@@ -1,26 +1,26 @@
 ---
 type: channel
-name: li-english
-language: en
-audience: mid-career professionals, AI-curious
+name: errors
+surface: in-product
 status: active
-voice: example-li-english
+voice: example-product-voice
 ---
 
-# Channel: LinkedIn English
+# Surface: Errors
 
-Rename and edit for your own channels. A channel is where posts land — its rules are about format, length, and audience expectations, not about voice.
+Rename and edit for your own product surfaces. Each surface gets its own file: `errors.md`, `empty-states.md`, `onboarding.md`, `transactional-emails.md`, etc.
 
 **Format constraints:**
-- 1,300 character soft limit (engagement drops after).
-- One link max, in the comments not the post.
-- Hashtags: 0–3, end of post only.
+- Maximum 2 lines on screen. Long explanations go in a "Learn more" link.
+- Always name the action that triggered the error. ("Card declined", not "Something went wrong".)
+- Always offer a next step. Never end on a dead-end.
 
-**Audience expectations:**
-- Career-relevant: every post answers "what does this mean for my career or salary?"
-- Practitioner-tone: written by someone in the trenches, not a thought-leader.
+**Audience expectation:**
+- The user is mid-task. They want to keep going. They don't want to read.
+- They've probably never seen this error before. Don't assume context.
 
 **Cadence:**
-- 5 posts/week target. Mon/Wed/Fri are highest reach.
+- Errors get reviewed when a new error code is added or when a flow is redesigned.
+- Audit the full error list quarterly.
 
-**Backlinks:** [[example-li-english]]
+**Backlinks:** [[example-product-voice]] [[apology-then-fix]]

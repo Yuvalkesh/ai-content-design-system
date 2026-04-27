@@ -2,34 +2,33 @@
 
 Auto-regenerated catalog of every entity in the wiki. Updated by `/wiki-ingest` and `/wiki-lint`.
 
-This file starts empty. As you add voices, patterns, hooks, themes, lessons, agents, and assets, this index will be rebuilt to point to all of them.
+This file starts empty. As you add voices, patterns, hooks, themes, lessons, agents, and shipped strings, this index will be rebuilt to point to all of them.
 
 ## Voices
-- (none yet — see `wiki/voices/_example-voice.md`)
+- [[example-product-voice]] *(rename to your product)*
 
-## Channels
-- (none yet — see `wiki/channels/_example-channel.md`)
+## Channels (surfaces)
+- [[errors]] *(starter — duplicate this for empty-states, onboarding, transactional, etc.)*
 
 ## Patterns
-- [[binary-closer]]
-- [[time-anchor]]
+- [[apology-then-fix]]
 
 ## Hooks
-- [[anecdote-cold-open]]
-- [[confession-cold-open]]
+- [[empty-state-invitation]]
 
 ## Themes
-- (none yet — see `wiki/themes/_example-theme.md`)
+- [[first-time-user]]
 
 ## Lessons
-- [[use-real-numbers]]
+- [[never-blame-user]]
 - [[no-invented-details]]
+- [[use-real-numbers]]
 
 ## Agents
-- (none yet — see `wiki/agents/_example-agent.md`)
+- [[example-pm]] *(rename to your stakeholders — pm, designer, legal, brand, support)*
 
-## Assets
-- (none yet — see `wiki/assets/posts-li-english/_example-post.md`)
+## Assets (shipped strings)
+- [[_example-string]] *(strings-errors)*
 
 ## Decisions
 - (none yet)
