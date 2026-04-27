@@ -54,7 +54,7 @@ This repo is for **content designers / UX writers** building a content brain for
 
 - Pick **one product surface** to start with: errors, empty states, onboarding, or transactional copy. Just one.
 - Add **one voice** in `wiki/voices/` describing how your product speaks on that surface.
-- Drop **5 real strings** from production into `sources/<surface>/` — one file per string, with 1-2 lines of context above each.
+- Drop **1 real string** from production into `sources/<surface>/` — one file, with 1-2 lines of context above the string itself.
 - Run `/wiki-ingest` to populate `wiki/assets/`, `patterns/`, `hooks/`, `themes/`.
 - Run `/wiki-query` to ask the system what tone you use, what patterns recur.
 - Run `/wiki-compile draft "<description of next screen>"` to generate a voice-correct draft with citations.

@@ -46,8 +46,8 @@ log.md            Append-only history of changes.
 
 ## How it works
 
-1. You drop 5 real strings from your product into `sources/<surface>/` — an error, an empty state, an onboarding line, a confirmation, a CTA. One file per string.
-2. `/wiki-ingest` reads each one, creates an entity page in `wiki/assets/`, and updates the `patterns/`, `hooks/`, `themes/` it used.
+1. You drop 1 real string from your product into `sources/<surface>/` — an error, an empty state, an onboarding line, or a CTA. One file. The one that's been on your mind.
+2. `/wiki-ingest` reads it, creates an entity page in `wiki/assets/`, and names the `patterns/`, `hooks/`, `themes/` it uses.
 3. `/wiki-query` answers questions against the wiki — "what tone do we use in error messages?", "show me our voice rules" — with citations to actual shipped strings.
 4. `/wiki-compile draft <description>` generates a voice-correct draft for the next screen, with options each backed by past strings that shipped.
 5. After the new string ships, drop it in `sources/`, run `/wiki-ingest` again. The cycle compounds.
@@ -78,4 +78,4 @@ This is for that.
 
 ## Next steps
 
-Read `CLAUDE.md` to understand the schema. Read `workflows/` to see how each command operates. Then start with one product surface (errors, or empty states), five real strings, and one `/wiki-ingest`.
+Read `CLAUDE.md` to understand the schema. Read `workflows/` to see how each command operates. Then start with one product surface (errors, or empty states), one real string, and one `/wiki-ingest`. The first ingest is the seed.
